@@ -4,16 +4,8 @@ set -e
 # and unfortunately it is not possible to git clone to a non-empty directory.
 mkdir -p spec/manageiq
 cd spec/manageiq
-git init
-git remote add origin https://github.com/ManageIQ/manageiq.git
-git pull origin master --depth=1
-cd -
+git clone https://github.com/ManageIQ/manageiq.git --branch master --depth 1 tmp && mv tmp/.git . && rm -rf tmp && git reset --hard
 
-echo 'unless dependencies.detect { |d| d.name == "manageiq-ui-classic" }' >> spec/manageiq/Gemfile.dev.rb
-echo '  gem "manageiq-ui-classic", :path => "'$(/bin/pwd)'"' >> spec/manageiq/Gemfile.dev.rb
-echo 'end' >> spec/manageiq/Gemfile.dev.rb
-
-cd spec/manageiq
 source tools/ci/setup_vmdb_configs.sh
 source tools/ci/setup_js_env.sh
 cd -
