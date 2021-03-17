@@ -23,9 +23,8 @@ class ApplicationHelper::ToolbarBuilder
   delegate :x_tree_history, :x_node, :x_active_tree, :to => :@view_context
   delegate :settings, :is_browser?, :is_browser_os?, :to => :@view_context
 
-  def initialize(view_context, view_binding, instance_data)
+  def initialize(view_context, instance_data)
     @view_context = view_context
-    @view_binding = view_binding
     @instance_data = instance_data
 
     instance_data.each do |name, value|
@@ -65,7 +64,7 @@ class ApplicationHelper::ToolbarBuilder
   def toolbar_button(inputs, props)
     button_class = inputs[:klass] || ApplicationHelper::Button::Basic
     props[:options] = inputs[:options] if inputs[:options]
-    button = button_class.new(@view_context, @view_binding, @instance_data, props)
+    button = button_class.new(@view_context, @instance_data, props)
     button.skipped? ? nil : apply_common_props(button, inputs)
   end
 

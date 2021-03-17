@@ -5,7 +5,7 @@ describe ApplicationHelper::Toolbar::EmsNetworksCenter do
   describe 'Add a New Network Provider' do
     let(:button_hash)   { ems_network_vmdb_choice[:items].detect { |b| b[:id] == 'ems_network_new' } }
     let(:button_klass)  { button_hash[:klass] }
-    let(:button)        { button_klass.new(nil, nil, {}, {}) }
+    let(:button)        { button_klass.new(nil, {}, {}) }
 
     it 'appropriate button class' do
       expect(button_klass).to eq(ApplicationHelper::Button::EmsNetworkNew)

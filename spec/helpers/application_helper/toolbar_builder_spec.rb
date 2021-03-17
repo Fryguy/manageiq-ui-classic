@@ -240,7 +240,7 @@ describe ApplicationHelper, "::ToolbarBuilder" do
                 :url_parms => "?id=#{@record.id}&button_id=#{btn_num}&cls=#{@record.class.name}&pressed=custom_button&desc=#{desc}"}
       @tb_buttons = {}
       @button = {:id => "custom_#{btn_num}"}
-      @button = ApplicationHelper::Button::Basic.new(nil, nil, {}, {:id => "custom_#{btn_num}"})
+      @button = ApplicationHelper::Button::Basic.new(nil, {}, {:id => "custom_#{btn_num}"})
     end
 
     context "button visibility" do

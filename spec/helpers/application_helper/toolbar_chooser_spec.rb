@@ -124,14 +124,14 @@ describe ApplicationHelper, "ToolbarChooser" do
     context 'when the active tab is summary' do
       it "displays summary toolbar" do
         @sb = {:active_tab => 'summary'}
-        expect(ApplicationHelper::ToolbarChooser.new(nil, nil, :record => @record, :explorer => true, :layout => 'automation_manager', :sb => @sb).send(:x_view_toolbar_filename)).to eq("x_summary_view_tb")
+        expect(ApplicationHelper::ToolbarChooser.new(nil, :record => @record, :explorer => true, :layout => 'automation_manager', :sb => @sb).send(:x_view_toolbar_filename)).to eq("x_summary_view_tb")
       end
     end
 
     context ' when the active tab is configured_systems' do
       it "displays summary toolbar" do
         @sb = {:active_tab => 'configured_systems'}
-        expect(ApplicationHelper::ToolbarChooser.new(nil, nil, :record => @record, :explorer => true, :layout => 'automation_manager', :sb => @sb).send(:x_view_toolbar_filename)).to eq("download_view_tb")
+        expect(ApplicationHelper::ToolbarChooser.new(nil, :record => @record, :explorer => true, :layout => 'automation_manager', :sb => @sb).send(:x_view_toolbar_filename)).to eq("download_view_tb")
       end
     end
   end

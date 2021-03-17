@@ -456,7 +456,6 @@ module ApplicationHelper
   def _toolbar_builder
     ToolbarBuilder.new(
       self,
-      binding,
       :active           => @active,
       :changed          => @changed,
       :condition        => @condition,
@@ -683,7 +682,6 @@ module ApplicationHelper
   def _toolbar_chooser
     ToolbarChooser.new(
       self,
-      binding,
       :alert_profiles => @alert_profiles,
       :conditions     => @conditions,
       :dialog         => @dialog,

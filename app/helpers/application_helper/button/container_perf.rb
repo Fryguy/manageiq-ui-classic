@@ -1,7 +1,7 @@
 class ApplicationHelper::Button::ContainerPerf < ApplicationHelper::Button::Basic
   needs(:@record)
 
-  def initialize(view_context, view_binding, instance_data, props)
+  def initialize(view_context, instance_data, props)
     super
     @entity = props[:options][:entity] || N_('Entity')
   end

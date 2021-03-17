@@ -3,9 +3,8 @@ class ApplicationHelper::Button::Basic < Hash
 
   delegate :role_allows?, :parse_nodetype_and_id, :to => :@view_context
 
-  def initialize(view_context, view_binding, instance_data, props)
+  def initialize(view_context, instance_data, props)
     @view_context  = view_context
-    @view_binding  = view_binding
 
     merge!(props)
 

@@ -1,5 +1,5 @@
 class ApplicationHelper::Button::PolymorphicConditionalButton < ApplicationHelper::Button::Basic
-  def initialize(view_context, view_binding, instance_data, props)
+  def initialize(view_context, instance_data, props)
     super
     @feature = props[:options][:feature]
     @parent_class = props[:options][:parent_class]

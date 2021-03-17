@@ -1,8 +1,9 @@
 class ApplicationHelper::Button::EmsContainerLaunchExternalLoggingSupport < ApplicationHelper::Button::GenericFeatureButton
-  def initialize(view_context, view_binding, instance_data, props)
+  def initialize(view_context, instance_data, props)
     props ||= {}
     props.store_path(:options, :feature, :external_logging)
-    super(view_context, view_binding, instance_data, props)
+
+    super
   end
 
   def disabled?

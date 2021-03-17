@@ -3,7 +3,7 @@ class ApplicationHelper::Button::GenericFeatureButton < ApplicationHelper::Butto
 
   needs :@record
 
-  def initialize(view_context, view_binding, instance_data, props)
+  def initialize(view_context, instance_data, props)
     super
     @feature = props[:options][:feature]
   end

@@ -47,9 +47,8 @@ class ApplicationHelper::ToolbarChooser
   delegate :session, :x_node, :x_active_tree, :super_admin_user?, :render_download_view_tb?,
            :parse_nodetype_and_id, :to => :@view_context
 
-  def initialize(view_context, view_binding, instance_data)
+  def initialize(view_context, instance_data)
     @view_context = view_context
-    @view_binding = view_binding
 
     instance_data.each do |name, value|
       instance_variable_set(:"@#{name}", value)
