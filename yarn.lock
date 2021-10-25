@@ -1254,7 +1254,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.1.2, @babel/runtime@npm:^7.10.0, @babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.12.1, @babel/runtime@npm:^7.15.4, @babel/runtime@npm:^7.3.1, @babel/runtime@npm:^7.4.4, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.6.3, @babel/runtime@npm:^7.7.2, @babel/runtime@npm:^7.8.3, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.8.7, @babel/runtime@npm:^7.9.1, @babel/runtime@npm:^7.9.2":
+"@babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.1.2, @babel/runtime@npm:^7.10.0, @babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.11.2, @babel/runtime@npm:^7.12.1, @babel/runtime@npm:^7.15.4, @babel/runtime@npm:^7.3.1, @babel/runtime@npm:^7.4.4, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.6.3, @babel/runtime@npm:^7.7.2, @babel/runtime@npm:^7.8.3, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.8.7, @babel/runtime@npm:^7.9.1, @babel/runtime@npm:^7.9.2":
   version: 7.15.4
   resolution: "@babel/runtime@npm:7.15.4"
   dependencies:
@@ -4184,14 +4184,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axe-core@npm:^3.5.4":
-  version: 3.5.6
-  resolution: "axe-core@npm:3.5.6"
-  checksum: 000777d2b6bf1f390beb1fb4b8714ed9127797c021c345b032db0c144e07320dbbe8cb0bcb7688b90b79cfbd3cdc1f27a4dc857804e3c61d7e0defb34deeb830
+"axe-core@npm:^4.0.2":
+  version: 4.3.4
+  resolution: "axe-core@npm:4.3.4"
+  checksum: b32506342bde8cbfd74e84c8cc0541674d0ac44cfd1d35b50148b4a3db43ee6593b1b8e0fe1f3ba69616a1d2aacd3e2ea76815d43da109794d9c3ad158789d95
   languageName: node
   linkType: hard
 
-"axobject-query@npm:^2.1.2":
+"axobject-query@npm:^2.2.0":
   version: 2.2.0
   resolution: "axobject-query@npm:2.2.0"
   checksum: 96b8c7d807ca525f41ad9b286186e2089b561ba63a6d36c3e7d73dc08150714660995c7ad19cda05784458446a0793b45246db45894631e13853f48c1aa3117f
@@ -8452,24 +8452,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jsx-a11y@npm:~6.3.1":
-  version: 6.3.1
-  resolution: "eslint-plugin-jsx-a11y@npm:6.3.1"
+"eslint-plugin-jsx-a11y@npm:^6.3.1":
+  version: 6.4.1
+  resolution: "eslint-plugin-jsx-a11y@npm:6.4.1"
   dependencies:
-    "@babel/runtime": ^7.10.2
+    "@babel/runtime": ^7.11.2
     aria-query: ^4.2.2
     array-includes: ^3.1.1
     ast-types-flow: ^0.0.7
-    axe-core: ^3.5.4
-    axobject-query: ^2.1.2
+    axe-core: ^4.0.2
+    axobject-query: ^2.2.0
     damerau-levenshtein: ^1.0.6
     emoji-regex: ^9.0.0
     has: ^1.0.3
-    jsx-ast-utils: ^2.4.1
+    jsx-ast-utils: ^3.1.0
     language-tags: ^1.0.5
   peerDependencies:
     eslint: ^3 || ^4 || ^5 || ^6 || ^7
-  checksum: 4f2814eb3e9811cbacd6694e64c504f2cebefaf7d1751bb858e7aceb09efecbce3e41389b64b4c6760ca072027050d397dd005eabaf6f4fa7391b8e086fc8d66
+  checksum: 30326276385b6029754fbca0a25140be0f2f84d263b38f794651acf973399ea316ab1b9d69dffb9b9807d2b47592ba4bc271a242edbb15abfc05d07b08060a7e
   languageName: node
   linkType: hard
 
@@ -9026,7 +9026,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fbjs@npm:^0.8.0, fbjs@npm:^0.8.1":
+"fbjs@npm:^0.8.0":
   version: 0.8.17
   resolution: "fbjs@npm:0.8.17"
   dependencies:
@@ -12748,17 +12748,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"jsx-ast-utils@npm:^2.4.1":
-  version: 2.4.1
-  resolution: "jsx-ast-utils@npm:2.4.1"
-  dependencies:
-    array-includes: ^3.1.1
-    object.assign: ^4.1.0
-  checksum: 833477231266631e0def7ab5fa5da386790130ce5f9ab5db22fb3a8e67ee0adba9082ff27687e5c64c893af00beeb2285a7309cbc40c5edbcafdaf4e9de069a1
-  languageName: node
-  linkType: hard
-
-"jsx-ast-utils@npm:^2.4.1 || ^3.0.0":
+"jsx-ast-utils@npm:^2.4.1 || ^3.0.0, jsx-ast-utils@npm:^3.1.0":
   version: 3.2.1
   resolution: "jsx-ast-utils@npm:3.2.1"
   dependencies:
@@ -13834,7 +13824,7 @@ fsevents@^1.2.7:
     eslint-plugin-angular: ~4.0.1
     eslint-plugin-import: ~2.22.1
     eslint-plugin-jest: ~24.1.0
-    eslint-plugin-jsx-a11y: ~6.3.1
+    eslint-plugin-jsx-a11y: ^6.3.1
     eslint-plugin-react: ~7.21.4
     fetch-mock: ^7.2.5
     file-loader: ~6.0.0
@@ -13862,16 +13852,16 @@ fsevents@^1.2.7:
     path-complete-extname: ~0.1.0
     patternfly: ~3.59.1
     patternfly-bootstrap-treeview: ~2.1.7
-    patternfly-react: 2.39.14
+    patternfly-react: ^2.40.0
     postcss-loader: ~3.0.0
     postcss-smart-import: ~0.6.11
     precss: ~1.4.0
     prop-types: ^15.6.0
     proxy-polyfill: ^0.1.7
-    react: ~16.9.0
+    react: ^16.9.0
     react-bootstrap: ~0.33.0
     react-codemirror2: ^6.0.0
-    react-dom: ~16.9.0
+    react-dom: ^16.9.0
     react-redux: ^7.1.1
     react-router: ~5.1.2
     react-router-dom: ~5.1.2
@@ -13902,6 +13892,15 @@ fsevents@^1.2.7:
     webpack-stats-plugin: ^0.3.2
     whatwg-fetch: ~2.0.4
     xml_display: ~0.1.1
+  peerDependencies:
+    "@octokit/core": ">=3"
+    "@popperjs/core": ">=2.10.2"
+    bootstrap: ">=3.1.1"
+    d3: ">=7.x"
+    eslint-plugin-react-hooks: ">=1.7.0"
+    immutable: ">=3.8.1"
+    seamless-immutable: ">=7.1.3"
+    typescript: ">=2.7"
   languageName: unknown
   linkType: soft
 
@@ -16180,9 +16179,9 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"patternfly-react@npm:2.39.14":
-  version: 2.39.14
-  resolution: "patternfly-react@npm:2.39.14"
+"patternfly-react@npm:^2.40.0":
+  version: 2.40.0
+  resolution: "patternfly-react@npm:2.40.0"
   dependencies:
     bootstrap-slider-without-jquery: ^10.0.0
     breakjs: ^1.0.0
@@ -16200,8 +16199,8 @@ fsevents@^1.2.7:
     react-ellipsis-with-tooltip: ^1.0.8
     react-fontawesome: ^1.6.1
     react-motion: ^0.5.2
+    react-recompose: ^0.31.1
     reactabular-table: ^8.14.0
-    recompose: ^0.26.0
     sortabular: ^1.5.1
     table-resolver: ^3.2.0
     uuid: ^3.3.2
@@ -16214,7 +16213,7 @@ fsevents@^1.2.7:
       optional: true
     table-resolver:
       optional: true
-  checksum: 090815e95621f21f311438f0aa50eee541769737f744831d6c29cbfab3067d9c905fed80e07391def28883eb0889f6cd5eebb2b857c6c7fa3e6b77c201d37788
+  checksum: c0ccfc667b44a5169cc3c954ef3de3ae9d0e57796bbf215a4bd40f61a4f43caf19e32c1f7063e86d0e4501d1f4f62bf8398931b3ec006ee6d3b50bec30520d2b
   languageName: node
   linkType: hard
 
@@ -17568,7 +17567,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react-dom@npm:^16.13.1":
+"react-dom@npm:^16.13.1, react-dom@npm:^16.9.0":
   version: 16.14.0
   resolution: "react-dom@npm:16.14.0"
   dependencies:
@@ -17579,20 +17578,6 @@ fsevents@^1.2.7:
   peerDependencies:
     react: ^16.14.0
   checksum: 5a5c49da0f106b2655a69f96c622c347febcd10532db391c262b26aec225b235357d9da1834103457683482ab1b229af7a50f6927a6b70e53150275e31785544
-  languageName: node
-  linkType: hard
-
-"react-dom@npm:~16.9.0":
-  version: 16.9.0
-  resolution: "react-dom@npm:16.9.0"
-  dependencies:
-    loose-envify: ^1.1.0
-    object-assign: ^4.1.1
-    prop-types: ^15.6.2
-    scheduler: ^0.15.0
-  peerDependencies:
-    react: ^16.0.0
-  checksum: a053a86f9bb30d7738cac21e399246d4399f163c5c272cfd1f92c8b80e381c5514d540fded733b15f1873810324765378d39b4105839ada48aff52cfaf17cbe3
   languageName: node
   linkType: hard
 
@@ -17693,7 +17678,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react-lifecycles-compat@npm:^3.0.4":
+"react-lifecycles-compat@npm:^3.0.2, react-lifecycles-compat@npm:^3.0.4":
   version: 3.0.4
   resolution: "react-lifecycles-compat@npm:3.0.4"
   checksum: a904b0fc0a8eeb15a148c9feb7bc17cec7ef96e71188280061fc340043fd6d8ee3ff233381f0e8f95c1cf926210b2c4a31f38182c8f35ac55057e453d6df204f
@@ -17772,6 +17757,21 @@ fsevents@^1.2.7:
   peerDependencies:
     react: ">=0.14.0"
   checksum: 9133b8d2b5a4e1845a04ee7a4e072127cef2e2f500003a133bd5cb28c1a2de374f0a65836ab242ebf61edde42067b948b5d1274123d3f65b491a9da50c5dbd04
+  languageName: node
+  linkType: hard
+
+"react-recompose@npm:^0.31.1":
+  version: 0.31.1
+  resolution: "react-recompose@npm:0.31.1"
+  dependencies:
+    "@babel/runtime": ^7.0.0
+    change-emitter: ^0.1.2
+    hoist-non-react-statics: ^2.3.1
+    react-lifecycles-compat: ^3.0.2
+    symbol-observable: ^1.0.4
+  peerDependencies:
+    react: ^0.14.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
+  checksum: fcd83a6e64533125e59c72900a676ebccda7d3e4392b3dc32859029a0eb547d9f426d3c9d940f7cd116b21f1ba19970266e286b5afe809e0861d00d10dac82b1
   languageName: node
   linkType: hard
 
@@ -17920,7 +17920,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react@npm:^16.13.1":
+"react@npm:^16.13.1, react@npm:^16.9.0":
   version: 16.14.0
   resolution: "react@npm:16.14.0"
   dependencies:
@@ -17928,17 +17928,6 @@ fsevents@^1.2.7:
     object-assign: ^4.1.1
     prop-types: ^15.6.2
   checksum: 8484f3ecb13414526f2a7412190575fc134da785c02695eb92bb6028c930bfe1c238d7be2a125088fec663cc7cda0a3623373c46807cf2c281f49c34b79881ac
-  languageName: node
-  linkType: hard
-
-"react@npm:~16.9.0":
-  version: 16.9.0
-  resolution: "react@npm:16.9.0"
-  dependencies:
-    loose-envify: ^1.1.0
-    object-assign: ^4.1.1
-    prop-types: ^15.6.2
-  checksum: 47346b93777f06793d0585ec9ec9546016600a19987ce0d8613cd937fc642f479b12865043ba046b04d23bc9afd511fd35683382f158bd761d8ca84638f187a6
   languageName: node
   linkType: hard
 
@@ -18170,20 +18159,6 @@ fsevents@^1.2.7:
   version: 2.0.0
   resolution: "realpath-native@npm:2.0.0"
   checksum: 0aa2db96e8f3258b0477b350fc0ffd658dea3da9aa1a6099aedaf845230cf94a0ed77ed8104816897c99de27a25c232351a466c3a87d85f340330e9274f688fa
-  languageName: node
-  linkType: hard
-
-"recompose@npm:^0.26.0":
-  version: 0.26.0
-  resolution: "recompose@npm:0.26.0"
-  dependencies:
-    change-emitter: ^0.1.2
-    fbjs: ^0.8.1
-    hoist-non-react-statics: ^2.3.1
-    symbol-observable: ^1.0.4
-  peerDependencies:
-    react: ^0.14.0 || ^15.0.0 || ^16.0.0
-  checksum: 25bd869a1243e1fd267e7bbc599156ec84a73047a6925a6d0b760e48ee41984a54e8b08ed1fe0749757eab17601efbf3be99c13302d637ae4226a706bf766b6f
   languageName: node
   linkType: hard
 
@@ -18978,16 +18953,6 @@ resolve@1.1.7:
   languageName: node
   linkType: hard
 
-"scheduler@npm:^0.15.0":
-  version: 0.15.0
-  resolution: "scheduler@npm:0.15.0"
-  dependencies:
-    loose-envify: ^1.1.0
-    object-assign: ^4.1.1
-  checksum: 75920a8288daac05d1c26a6aaa94cddfe302f03c7b1108191696b4cfcb2e2d2038810a4d44ac4d6c6687bb26fa1f8db4b19d0655a4e79ccf2a253749a394de1d
-  languageName: node
-  linkType: hard
-
 "scheduler@npm:^0.19.1":
   version: 0.19.1
   resolution: "scheduler@npm:0.19.1"
@@ -19043,7 +19008,7 @@ resolve@1.1.7:
   languageName: node
   linkType: hard
 
-"semantic-release@npm:15.14.0, semantic-release@npm:^15.13.1":
+"semantic-release@npm:^15.13.1":
   version: 15.14.0
   resolution: "semantic-release@npm:15.14.0"
   dependencies:
