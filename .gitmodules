@@ -1,3 +1,4 @@
 [submodule "spec/manageiq"]
 	path = spec/manageiq
 	url = git@github.com:ManageIQ/manageiq
+	branch = master
